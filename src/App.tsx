@@ -7,18 +7,20 @@ import List from './components/List';
 import TodoItem from './components/TodoItem';
 import DragGame from './components/DragGame';
 import EventsExamle from './components/EventsExamle';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import CardPage from './pages/CardPage';
 
 const App: React.FC = () => {
 
-const [users, setUsers] = React.useState<IUser[]>([])
-const [todos, setTodos] = React.useState<ITodo[]>([])
+  const [users, setUsers] = React.useState<IUser[]>([])
+  const [todos, setTodos] = React.useState<ITodo[]>([])
 
-React.useEffect(()=>{
- fetchData()
- fetchTodos()
-}, [])
+  React.useEffect(() => {
+    fetchData()
+    fetchTodos()
+  }, [])
 
-async function fetchData(){
+  async function fetchData() {
     try {
       const responce = await axios.get<IUser[]>('https://jsonplaceholder.typicode.com/users')
       setUsers(responce.data)
@@ -26,7 +28,7 @@ async function fetchData(){
       alert(error)
     }
   }
-async function fetchTodos(){
+  async function fetchTodos() {
     try {
       const responce = await axios.get<ITodo[]>('https://jsonplaceholder.typicode.com/todos')
       setTodos(responce.data)
@@ -37,29 +39,29 @@ async function fetchTodos(){
 
   return (
     <section>
-      {/* <Card 
-          width="300px" 
-          height="200px" 
-          title='Card TypeScript Example'
-          backgroundColor="lightblue"
-          onPositionChange={() => {
-            console.log('Position changed');
-          }}
-          >
-        
-        <p>This is a simple card component.</p>
-      </Card>
+      <nav>
+        <Link to='/'>Home</Link>
+        <Link to='/input'>Input</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<CardPage />} />
+        <Route path="input" element={<EventsExamle />} />
+      </Routes>
+
+
+
+
       <List
         items={users}
-        renderItem={(user =>  <UsersList key={user.id} users={users}/>)}
+        renderItem={(user => <UsersList key={user.id} users={users} />)}
       />
       <List
         items={todos}
-        renderItem={(todo:ITodo) => <TodoItem key={todo.id} todo={todo}/>}
-      /> */}
-    
-        {/* <DragGame/> */}
-        <EventsExamle />
+        renderItem={(todo: ITodo) => <TodoItem key={todo.id} todo={todo} />}
+      />
+
+
     </section>
   );
 };
