@@ -17,10 +17,10 @@ a {
 
 h1, h2, h3, h4 {margin:0; padding: 0;}
 
-img {
+/* img {
     max-width: 100%;
     display: block;
-}
+} */
 
 
 
@@ -34,11 +34,11 @@ img {
 
     --clr-light: rgb(212, 207, 207);
     --clr-dark-1: #3f3f58;
-    --clr-dark-2: #1d1d27;
+    --clr-dark-2: #27251d;
     --clr-accent: #318a48;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
+    --fs-h1: 2.25rem;
+    --fs-h2: 1.75rem;
     --fs-h3: 1.45rem;
     --fs-body: 1.4rem;
     --fs-arcticle: 1.1rem;
@@ -47,21 +47,76 @@ img {
 
 @media (min-width: 900px) {
     :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.7rem;
-        --fs-body: 1.5rem;
+        --fs-h1: 3.5rem;
+        --fs-h2: 2.75rem;
+        --fs-h3: 2.2rem;
+        --fs-body: 1.6rem;
     }
 }
 
-/* body{
-    /* font-family: var(--ff-primary);
+body {
+    font-family: var(--ff-primary);
     font-size: var(--fs-body);
     background-color: var(--clr-dark-2);
     line-height: 1.6;    
 }
-*/
 
 
+/* Welcome */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--clr-dark-2); */
+    color: var(--clr-light);
+    padding: 4em;
+    background-image: url('../public/programming.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.home-img{
+    width: 20%;
+    margin-right: 2em;
+}
+
+.home-data>h1{
+  font-size: var(--fs-h2);
+}
+
+.home-data>p{
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
+}
+
+ .about-data span {
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--clr-light);
+}
+
+.about-data>h4{
+    color: var(--clr-accent);
+}
+
+@media (max-width: 767px) {
+    .home {
+      /* Adjustments for smaller screens */
+      flex-direction: column; /* Stack children vertically */
+      padding: 2em; /* Reduce padding */
+    }
+  
+    .home-img {
+       
+        margin-bottom: 1em; /* Space between the image and text */
+        width: 50%; /* Fixed width for the image in mobile view */
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+    .home-data {
+      order: 1; /* Ensure the text comes before the image */
+    }
+  }
 
 
