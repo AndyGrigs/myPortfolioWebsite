@@ -2,9 +2,7 @@
 
 const App= () => {
   return (
-    <section>
-   
-    </section>
+   <div></div>
   );
 };
 
