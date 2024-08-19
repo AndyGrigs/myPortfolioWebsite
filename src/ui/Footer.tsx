@@ -3,10 +3,14 @@ import { Layout } from 'antd';
 
 const { Footer } = Layout;
 
-const AppFooter = () => (
+const AppFooter = () => {
+
+  const currentYear = new Date().getFullYear();
+
+  return (
   <Footer style={{ textAlign: 'center' }}>
-    My Portfolio ©2024 Created by Me
+    My Portfolio ©{currentYear} Created by Me
   </Footer>
 );
-
+}
 export default AppFooter;

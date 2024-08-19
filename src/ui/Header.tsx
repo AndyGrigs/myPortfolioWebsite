@@ -8,13 +8,22 @@ const AppHeader = () => (
     <Header className="header">
         <div className="logo" />
         <Flex justify='flex-end'>
-            <Menu theme='dark' mode="horizontal">
-                <Menu.Item key="home" icon={<HomeOutlined />}>Home</Menu.Item>
-                <Menu.Item key="about" icon={<UserOutlined />}>About</Menu.Item>
-                <Menu.Item key="projects" icon={<ProjectOutlined />}>Projects</Menu.Item>
+            <Menu theme='light' mode="horizontal">
+                <Menu.Item key="home">
+                    <a href="#home"><HomeOutlined /></a>
+                    Home
+                </Menu.Item>
+                <Menu.Item key="about">
+                    <a href="#about"><UserOutlined /></a>
+                    About
+                </Menu.Item>
+                <Menu.Item key="projects">
+                    <a href="#projects"><ProjectOutlined /></a>
+                    Projects
+                </Menu.Item>
             </Menu>
         </Flex>
-    </Header>
+    </Header >
 );
 
 export default AppHeader;
