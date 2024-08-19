@@ -1,6 +1,6 @@
 // Import necessary components from Ant Design
 import React from 'react';
-import { Card } from 'antd';
+import { Card, Image } from 'antd';
 
 interface Certification {
   name: string;
@@ -11,10 +11,10 @@ interface Certification {
 
 const certificationsData: Certification[] = [
   {
-    name: "Certified React Developer",
-    issuer: "React Foundation",
-    issuedDate: "2023-04-01",
-    logoUrl: "/react_logo.png"
+    name: "Certified Frontend Developer",
+    issuer: "Scrimba",
+    issuedDate: "18.03.2023",
+    logoUrl: "/scrimba.png"
   },
   {
     name: "AWS Certified Solutions Architect",
@@ -60,8 +60,8 @@ const Certifications: React.FC = () => {
           <Card
             key={index}
             hoverable
-            style={{ width: 240, margin: 'auto', marginTop: 30 }}
-            cover={certification.logoUrl ? <img alt={certification.name} src={certification.logoUrl} /> : null}
+            style={{ width: 240,  margin: 'auto', marginTop: 30 }}
+            cover={certification.logoUrl ? <Image alt={certification.name} src={certification.logoUrl} /> : null}
           >
             <Card.Meta title={certification.name} description={`Issued by ${certification.issuer}`} />
             <p>Date Issued: {certification.issuedDate}</p>

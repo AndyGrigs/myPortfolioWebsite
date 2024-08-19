@@ -32,7 +32,7 @@ const projectsData: Project[] = [
     title: "Car Selling Site",
     imageUrl: "/car_selling.png",
     link: "https://carsellingsite.andygrigs.repl.co/",
-    description: "Side where the buyer can choose the appropriate car to buy"
+    description: "A buyer can choose the car to buy"
   },
   {
     title: "Dashboard",
@@ -60,7 +60,7 @@ const MyWorks: React.FC = () => {
           <a href={project.link} target="_blank" rel="noopener noreferrer" key={index}>
           <Card
             hoverable
-            style={{ width: 240, margin: 'auto', marginTop: 30 }}
+            style={{ width: 240, height: 260, margin: 'auto', marginTop: 30 }}
             cover={<img alt={project.title} src={project.imageUrl} />}
           >
             <Card.Meta title={project.title} description={project.description} />
