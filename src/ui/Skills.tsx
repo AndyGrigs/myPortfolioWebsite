@@ -14,6 +14,7 @@ const skills = [
     { name: "HTML & CSS", percentage: 95 },
     { name: "JavaScript/React", percentage: 90 },
     { name: "Node.js", percentage: 80 },
+    { name: "Python", percentage: 65 },
     { name: "UI design", percentage: 63 },
     { name: "Mongo DB", percentage: 70 },
 ];
