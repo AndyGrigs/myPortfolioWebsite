@@ -7,6 +7,7 @@ import Projects from './ui/MyWorks';
 import WelcomeSection from './ui/WelcomeSection';
 import Certifications from './ui/Certification';
 
+
 const { Content } = Layout;
 
 const App = () => (

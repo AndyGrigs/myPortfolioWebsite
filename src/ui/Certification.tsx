@@ -17,36 +17,30 @@ const certificationsData: Certification[] = [
     logoUrl: "/scrimba.png"
   },
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    issuedDate: "2023-06-15",
-    logoUrl: "/aws_logo.png"
+    name: "Responsive Web Design",
+    issuer: "FreeCodeCamp",
+    issuedDate: "2022-10-22",
+    logoUrl: "/fcc.png"
   },
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    issuedDate: "2023-06-15",
-    logoUrl: "/aws_logo.png"
+    name: "Fron End Development Libraries",
+    issuer: "FreeCodeCamp",
+    issuedDate: "2024-03-02",
+    logoUrl: "/fcc2.png"
   },
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    issuedDate: "2023-06-15",
-    logoUrl: "/aws_logo.png"
+    name: "Scientific Computing with Python",
+    issuer: "FreeCodeCamp",
+    issuedDate: "2024-09-24",
+    logoUrl: "/fcc3.png"
   },
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    issuedDate: "2023-06-15",
-    logoUrl: "/aws_logo.png"
+    name: "Legasy JavaScript Algorithms and Data Structures",
+    issuer: "FreeCodeCamp",
+    issuedDate: "2022-12-22",
+    logoUrl: "/fcc4.png"
   },
-  {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    issuedDate: "2023-06-15",
-    logoUrl: "/aws_logo.png"
-  },
-  // Add more certifications as needed
+
 ];
 
 const Certifications: React.FC = () => {
