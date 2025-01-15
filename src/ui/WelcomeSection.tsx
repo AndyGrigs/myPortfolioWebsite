@@ -7,7 +7,7 @@ const WelcomeSection: React.FC = () => {
   return (
     <section className="home" id="welcome-section">
     <div className="home-img">
-      <Image src="/me_.jpg" alt="Profile Picture" />
+      <Image src="/me.jpg" alt="Profile Picture" />
     </div>
   
     <div className="home-data">
