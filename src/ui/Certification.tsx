@@ -10,12 +10,7 @@ interface Certification {
 }
 
 const certificationsData: Certification[] = [
-  {
-    name: "Certified Frontend Developer",
-    issuer: "Scrimba",
-    issuedDate: "18.03.2023",
-    logoUrl: "/scrimba.png"
-  },
+  
   {
     name: "Responsive Web Design",
     issuer: "FreeCodeCamp",
@@ -39,6 +34,12 @@ const certificationsData: Certification[] = [
     issuer: "FreeCodeCamp",
     issuedDate: "2022-12-22",
     logoUrl: "/fcc4.png"
+  },
+  {
+    name: "Certified Frontend Developer",
+    issuer: "Scrimba",
+    issuedDate: "18.03.2023",
+    logoUrl: "/scrimba.png"
   },
 
 ];

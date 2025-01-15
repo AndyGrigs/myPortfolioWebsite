@@ -12,13 +12,13 @@ const projectsData: Project[] = [
   {
     title: "German Learning Platform",
     imageUrl: "/image.png",
-    link: "https://dashboard.andygrigs.repl.co/",
+    link: "https://lernst-du-deutsch.netlify.app",
     description: "App for learning German language for beginniners"
   },
   {
     title: "Blog App",
     imageUrl: "/blogApp_react.png",
-    link: "https://blogsapp.andygrigs.repl.co/posts",
+    link: "https://peppy-puppy-cea4ed.netlify.app/",
     description: "Simple app for getting and creating posts"
   },
  
@@ -39,13 +39,7 @@ const projectsData: Project[] = [
     imageUrl: "/dashboard.png",
     link: "https://dashboard.andygrigs.repl.co/",
     description: "Dashboard for seeing some progress or some data",
-  },
-  {
-    title: "Sending User Invitation",
-    imageUrl: "/sendind_invitation.png",
-    link: "https://sendinguserinvitation1.andygrigs.repl.co/",
-    description: ""
-  },
+  }
 
 ];
 
