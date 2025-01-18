@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/q": "^1.5.8"
+    "@types/q": "^1.5.8",
+    "@types/webxr": "^0.5.21"
   }
 }
