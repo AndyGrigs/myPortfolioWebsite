@@ -41,7 +41,7 @@ h1, h2, h3, h4 {margin:0; padding: 0;}
     --fs-h2: 1.75rem;
     --fs-h3: 1.45rem;
     --fs-body: 1.4rem;
-    --fs-arcticle: 1.1rem;
+    --fs-arcticle: 1.8rem;
 
 }
 
@@ -127,6 +127,12 @@ body {
     color: var(--clr-accent);
 }
 
+.about  article  p{
+    font-size: var(--fs-arcticle);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 @media (max-width: 767px) {
     .home {
       flex-direction: column; 
@@ -154,6 +160,12 @@ body {
     }
   }
 
+  .certifications .certifications-title {
+    text-align: center;
+  }
+  .certifications .certifications-subtitle {
+    text-align: center;
+  }
 
   .skills-row{
     margin-top: 2em;
