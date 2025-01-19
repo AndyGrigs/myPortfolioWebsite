@@ -10,6 +10,20 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: "Chockolade Landing Page",
+    imageUrl: "/image.png",
+    link: "https://andygrigs.github.io/chocko-landing-page/",
+    description: "A somple landing page for a chocolate company"
+  },
+
+  {
+    title: "Web Studio Portfolio Site",
+    imageUrl: "/image.png",
+    link: "https://andygrigs.github.io/goit-markup-hw-06/",
+    description: "A portfolio site for a web studio"
+  },
+
+  {
     title: "German Learning Platform",
     imageUrl: "/image.png",
     link: "https://lernst-du-deutsch.netlify.app",
@@ -20,25 +34,6 @@ const projectsData: Project[] = [
     imageUrl: "/blogApp_react.png",
     link: "https://peppy-puppy-cea4ed.netlify.app/",
     description: "Simple app for getting and creating posts"
-  },
- 
-  // {
-  //   title: "Landing Page",
-  //   imageUrl: "/landing.png",
-  //   link: "https://landingpage.andygrigs.repl.co/",
-  //   description: ""
-  // },
-  {
-    title: "Car Selling Site",
-    imageUrl: "/car_selling.png",
-    link: "https://carsellingsite.andygrigs.repl.co/",
-    description: "A buyer can choose the car to buy"
-  },
-  {
-    title: "Dashboard",
-    imageUrl: "/dashboard.png",
-    link: "https://dashboard.andygrigs.repl.co/",
-    description: "Dashboard for seeing some progress or some data",
   }
 
 ];
