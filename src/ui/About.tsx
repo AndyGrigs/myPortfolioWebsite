@@ -5,7 +5,7 @@ import Skills from './Skills';
 const About = () => (
   <section id='about' style={{ padding: '20px', maxWidth: '80%', margin: '0 auto' }}>
     <article>
-      <Card title="About Me" style={{ width: '100%', fontSize: '16px' }}>
+      <Card title="About Me" style={{ width: '100%', fontSize: '24px' }}>
         <p>
           Hello! 👋 I am a passionate software developer 🚀 with a keen interest in creating impactful web applications. With a solid foundation in JavaScript, Node.js, and Python, I thrive in environments where I can leverage my skills to solve complex problems and enhance user experiences 💻🛠️.
         </p>
