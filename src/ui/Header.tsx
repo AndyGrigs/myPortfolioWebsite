@@ -8,7 +8,7 @@ const AppHeader = () => (
     <Header className="header">
         <div className="logo" />
         <Flex justify='flex-end'>
-            <Menu theme='light' mode="horizontal">
+            <Menu theme='light' mode="horizontal" overflowedIndicator={null}>
                 <Menu.Item key="home">
                     <a href="#home"><HomeOutlined /></a>
                     Home
